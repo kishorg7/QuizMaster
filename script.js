@@ -8,6 +8,7 @@ const progressText = document.getElementById("question-number");
 
 function loadQuestion() {
     const current = questions[currentQuestion];
+    let answered = false;
 
     questionText.textContent = current.question;
     optionsContainer.innerHTML = "";
