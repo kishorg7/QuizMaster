@@ -10,6 +10,7 @@ const scoreText = document.getElementById("score");
 function loadQuestion() {
     const current = questions[currentQuestion];
     let answered = false;
+    nextButton.disabled = true;
 
     questionText.textContent = current.question;
     optionsContainer.innerHTML = "";
@@ -39,6 +40,7 @@ function loadQuestion() {
 }
 
     answered = true;
+    nextButton.disabled = false;
 
             Array.from(optionsContainer.children).forEach((btn) => {
                 btn.disabled = true;
