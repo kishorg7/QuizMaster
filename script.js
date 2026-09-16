@@ -30,6 +30,12 @@ function loadQuestion() {
     }
 } else {
     button.classList.add("incorrect");
+
+    Array.from(optionsContainer.children).forEach((btn) => {
+        if (btn.textContent === current.answer) {
+            btn.classList.add("correct");
+        }
+    });
 }
 
     answered = true;
