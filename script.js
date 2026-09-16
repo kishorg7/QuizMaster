@@ -5,6 +5,7 @@ const questionText = document.getElementById("question");
 const optionsContainer = document.getElementById("options");
 const nextButton = document.getElementById("next-btn");
 const progressText = document.getElementById("question-number");
+const scoreText = document.getElementById("score");
 
 function loadQuestion() {
     const current = questions[currentQuestion];
@@ -43,6 +44,10 @@ function loadQuestion() {
         progressText.textContent =
             `Question ${currentQuestion + 1} of ${questions.length}`;
     }
+
+    if (scoreText) {
+    scoreText.textContent = `Score: ${score}`;
+}
 
     nextButton.textContent =
         currentQuestion === questions.length - 1 ? "Finish" : "Next";
