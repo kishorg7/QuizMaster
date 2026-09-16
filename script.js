@@ -46,6 +46,10 @@ function loadQuestion() {
 }
 
 nextButton.addEventListener("click", () => {
+    if (!answered) {
+        return;
+    }
+
     if (currentQuestion < questions.length - 1) {
         currentQuestion++;
         loadQuestion();
