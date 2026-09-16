@@ -4,7 +4,7 @@ let score = 0;
 const questionText = document.getElementById("question");
 const optionsContainer = document.getElementById("options");
 const nextButton = document.getElementById("next-btn");
-const progressText = document.getElementById("progress");
+const progressText = document.getElementById("question-number");
 
 function loadQuestion() {
     const current = questions[currentQuestion];
