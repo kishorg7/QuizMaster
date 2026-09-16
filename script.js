@@ -22,11 +22,15 @@ function loadQuestion() {
 
         button.addEventListener("click", () => {
     if (option === current.answer) {
-        score++;
-        button.classList.add("correct");
-    } else {
-        button.classList.add("incorrect");
+    score++;
+    button.classList.add("correct");
+
+    if (scoreText) {
+        scoreText.textContent = `Score: ${score}`;
     }
+} else {
+    button.classList.add("incorrect");
+}
 
     answered = true;
 
