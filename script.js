@@ -23,6 +23,8 @@ function loadQuestion() {
             if (option === current.answer) {
                 score++;
             }
+            
+            answered = true;
 
             Array.from(optionsContainer.children).forEach((btn) => {
                 btn.disabled = true;
