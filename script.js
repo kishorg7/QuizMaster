@@ -20,11 +20,14 @@ function loadQuestion() {
         button.type = "button";
 
         button.addEventListener("click", () => {
-            if (option === current.answer) {
-                score++;
-            }
-            
-            answered = true;
+    if (option === current.answer) {
+        score++;
+        button.classList.add("correct");
+    } else {
+        button.classList.add("incorrect");
+    }
+
+    answered = true;
 
             Array.from(optionsContainer.children).forEach((btn) => {
                 btn.disabled = true;
