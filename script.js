@@ -9,6 +9,10 @@ const scoreText = document.getElementById("score");
 const feedbackText = document.getElementById("answer-feedback");
 
 function loadQuestion() {
+    if (!questions || questions.length === 0) {
+        return;
+    }
+
     const current = questions[currentQuestion];
 
     if (!current) {
