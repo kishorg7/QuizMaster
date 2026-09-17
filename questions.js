@@ -229,4 +229,14 @@ const questions = [
         ],
         answer: "for"
     },
+        {
+        question: "Which HTML element is used to display an image?",
+        options: [
+            "<img>",
+            "<image>",
+            "<picture>",
+            "<src>"
+        ],
+        answer: "<img>"
+    },
 ];
