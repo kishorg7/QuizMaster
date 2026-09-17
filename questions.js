@@ -119,4 +119,14 @@ const questions = [
         ],
         answer: "function"
     },
+        {
+        question: "Which HTML element is used for the main content of a page?",
+        options: [
+            "<main>",
+            "<content>",
+            "<body-content>",
+            "<section-main>"
+        ],
+        answer: "<main>"
+    },
 ];
