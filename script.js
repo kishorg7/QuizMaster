@@ -152,3 +152,22 @@ if (finalScoreText) {
             `Your Score: ${savedScore} / ${savedTotal}`;
     }
 }
+
+const performanceText = document.getElementById("performance-message");
+
+if (performanceText) {
+    const savedScore = localStorage.getItem("quizScore");
+    const savedTotal = localStorage.getItem("quizTotal");
+
+    if (savedScore !== null && savedTotal !== null) {
+        const percentage = (Number(savedScore) / Number(savedTotal)) * 100;
+
+        if (percentage >= 80) {
+            performanceText.textContent = "Excellent performance!";
+        } else if (percentage >= 50) {
+            performanceText.textContent = "Good job! Keep practicing.";
+        } else {
+            performanceText.textContent = "Keep practicing and try again.";
+        }
+    }
+}
