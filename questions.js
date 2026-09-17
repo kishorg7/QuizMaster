@@ -149,4 +149,14 @@ const questions = [
         ],
         answer: "font-size"
     },
+        {
+        question: "Which keyword can be used to declare a variable in JavaScript?",
+        options: [
+            "let",
+            "style",
+            "class",
+            "select"
+        ],
+        answer: "let"
+    },
 ];
