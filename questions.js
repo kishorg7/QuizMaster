@@ -79,4 +79,14 @@ const questions = [
         ],
         answer: "const"
     },
+       {
+        question: "Which method adds an item to the end of a JavaScript array?",
+        options: [
+            "push()",
+            "pop()",
+            "shift()",
+            "slice()"
+        ],
+        answer: "push()"
+    }, 
 ];
