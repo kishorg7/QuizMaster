@@ -140,3 +140,15 @@ if (questionText && optionsContainer && nextButton) {
     resetQuizState();
     loadQuestion();
 }
+
+const finalScoreText = document.getElementById("final-score");
+
+if (finalScoreText) {
+    const savedScore = localStorage.getItem("quizScore");
+    const savedTotal = localStorage.getItem("quizTotal");
+
+    if (savedScore !== null && savedTotal !== null) {
+        finalScoreText.textContent =
+            `Your Score: ${savedScore} / ${savedTotal}`;
+    }
+}
