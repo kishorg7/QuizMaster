@@ -48,5 +48,15 @@ const questions = [
             "@"
         ],
         answer: "#"
-    }
+    },
+    {
+        question: "Which of these is a web browser?",
+        options: [
+            "Google Chrome",
+            "Microsoft Word",
+            "Adobe Photoshop",
+            "MySQL"
+        ],
+        answer: "Google Chrome"
+    },
 ];
