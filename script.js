@@ -8,6 +8,12 @@ const progressText = document.getElementById("question-number");
 const scoreText = document.getElementById("score");
 const feedbackText = document.getElementById("answer-feedback");
 
+function updateScoreDisplay() {
+    if (scoreText) {
+        scoreText.textContent = `Score: ${score}`;
+    }
+}
+
 function disableAnswerButtons() {
     Array.from(optionsContainer.children).forEach((btn) => {
         btn.disabled = true;
@@ -50,9 +56,7 @@ function loadQuestion() {
     score++;
     button.classList.add("correct");
 
-    if (scoreText) {
-        scoreText.textContent = `Score: ${score}`;
-    }
+    updateScoreDisplay();
 
     if (feedbackText) {
         feedbackText.textContent = "Correct answer!";
