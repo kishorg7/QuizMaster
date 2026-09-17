@@ -179,4 +179,14 @@ const questions = [
         ],
         answer: "<ul>"
     },
+        {
+        question: "Which HTML element is used to create a paragraph?",
+        options: [
+            "<p>",
+            "<para>",
+            "<paragraph>",
+            "<text>"
+        ],
+        answer: "<p>"
+    },
 ];
