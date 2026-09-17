@@ -89,4 +89,14 @@ const questions = [
         ],
         answer: "push()"
     }, 
+    {
+        question: "What does DOM stand for?",
+        options: [
+            "Document Object Model",
+            "Data Object Management",
+            "Digital Output Method",
+            "Document Order Method"
+        ],
+        answer: "Document Object Model"
+    },
 ];
