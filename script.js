@@ -9,8 +9,6 @@ function resetQuizState() {
     localStorage.removeItem("quizTotal");
 }
 
-resetQuizState();
-
 const questionText = document.getElementById("question");
 const optionsContainer = document.getElementById("options");
 const nextButton = document.getElementById("next-btn");
@@ -139,5 +137,6 @@ if (nextButton) {
 }
 
 if (questionText && optionsContainer && nextButton) {
+    resetQuizState();
     loadQuestion();
 }
