@@ -87,7 +87,8 @@ function loadQuestion() {
         currentQuestion === questions.length - 1 ? "Finish" : "Next";
 }
 
-nextButton.addEventListener("click", () => {
+if (nextButton) {
+    nextButton.addEventListener("click", () => {
     if (!answered) {
         return;
     }
@@ -100,6 +101,9 @@ nextButton.addEventListener("click", () => {
         localStorage.setItem("quizTotal", questions.length);
         window.location.href = "result.html";
     }
-});
+    });
+}
 
-loadQuestion();
+if (questionText && optionsContainer && nextButton) {
+    loadQuestion();
+}
