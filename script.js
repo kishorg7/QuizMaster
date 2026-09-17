@@ -1,5 +1,6 @@
 let currentQuestion = 0;
 let score = 0;
+let answered = false;
 
 function resetQuizState() {
     currentQuestion = 0;
@@ -57,7 +58,7 @@ function loadQuestion() {
         return;
     }
 
-    let answered = false;
+    answered = false;
     nextButton.disabled = true;
     nextButton.textContent = "Next";
     if (feedbackText) {
