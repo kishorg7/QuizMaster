@@ -10,6 +10,11 @@ const feedbackText = document.getElementById("answer-feedback");
 
 function loadQuestion() {
     const current = questions[currentQuestion];
+
+    if (!current) {
+        return;
+    }
+
     let answered = false;
     nextButton.disabled = true;
     nextButton.textContent = "Next";
