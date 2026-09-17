@@ -6,6 +6,7 @@ const optionsContainer = document.getElementById("options");
 const nextButton = document.getElementById("next-btn");
 const progressText = document.getElementById("question-number");
 const scoreText = document.getElementById("score");
+const feedbackText = document.getElementById("answer-feedback");
 
 function loadQuestion() {
     const current = questions[currentQuestion];
@@ -29,6 +30,10 @@ function loadQuestion() {
     if (scoreText) {
         scoreText.textContent = `Score: ${score}`;
     }
+
+    if (feedbackText) {
+        feedbackText.textContent = "Correct answer!";
+    }
 } else {
     button.classList.add("incorrect");
 
@@ -37,6 +42,10 @@ function loadQuestion() {
             btn.classList.add("correct");
         }
     });
+
+    if (feedbackText) {
+        feedbackText.textContent = "Incorrect answer.";
+    }
 }
 
     answered = true;
