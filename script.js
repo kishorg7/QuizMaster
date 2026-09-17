@@ -32,6 +32,10 @@ function loadQuestion() {
         button.type = "button";
 
         button.addEventListener("click", () => {
+    if (answered) {
+        return;
+    }
+
     if (option === current.answer) {
     score++;
     button.classList.add("correct");
