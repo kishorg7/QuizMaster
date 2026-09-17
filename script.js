@@ -1,6 +1,9 @@
 let currentQuestion = 0;
 let score = 0;
 
+localStorage.removeItem("quizScore");
+localStorage.removeItem("quizTotal");
+
 const questionText = document.getElementById("question");
 const optionsContainer = document.getElementById("options");
 const nextButton = document.getElementById("next-btn");
