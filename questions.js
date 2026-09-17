@@ -99,4 +99,14 @@ const questions = [
         ],
         answer: "Document Object Model"
     },
+    {
+        question: "Which CSS property controls the space inside an element?",
+        options: [
+            "margin",
+            "padding",
+            "border",
+            "outline"
+        ],
+        answer: "padding"
+    },
 ];
