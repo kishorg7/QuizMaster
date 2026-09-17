@@ -59,4 +59,14 @@ const questions = [
         ],
         answer: "Google Chrome"
     },
+    {
+        question: "Which CSS property is used to change the text color?",
+        options: [
+            "background-color",
+            "font-size",
+            "color",
+            "text-style"
+        ],
+        answer: "color"
+    },
 ];
