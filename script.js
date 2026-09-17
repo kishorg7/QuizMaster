@@ -8,6 +8,12 @@ const progressText = document.getElementById("question-number");
 const scoreText = document.getElementById("score");
 const feedbackText = document.getElementById("answer-feedback");
 
+function disableAnswerButtons() {
+    Array.from(optionsContainer.children).forEach((btn) => {
+        btn.disabled = true;
+    });
+}
+
 function loadQuestion() {
     if (!questions || questions.length === 0) {
         return;
@@ -68,9 +74,7 @@ function loadQuestion() {
     answered = true;
     nextButton.disabled = false;
 
-            Array.from(optionsContainer.children).forEach((btn) => {
-                btn.disabled = true;
-            });
+            disableAnswerButtons();
 
             button.classList.add("selected");
         });
