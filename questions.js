@@ -109,4 +109,14 @@ const questions = [
         ],
         answer: "padding"
     },
+        {
+        question: "Which keyword is used to define a function in JavaScript?",
+        options: [
+            "function",
+            "method",
+            "define",
+            "func"
+        ],
+        answer: "function"
+    },
 ];
