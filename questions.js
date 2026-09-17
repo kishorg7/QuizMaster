@@ -259,4 +259,14 @@ const questions = [
         ],
         answer: "toUpperCase()"
     },
+        {
+        question: "Which CSS property controls the space outside an element?",
+        options: [
+            "padding",
+            "margin",
+            "spacing",
+            "border-space"
+        ],
+        answer: "margin"
+    },
 ];
