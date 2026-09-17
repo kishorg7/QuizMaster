@@ -199,4 +199,14 @@ const questions = [
         ],
         answer: "background-color"
     },
+        {
+        question: "Which statement is used to make a decision in JavaScript?",
+        options: [
+            "if",
+            "for",
+            "while",
+            "switch-case-loop"
+        ],
+        answer: "if"
+    },
 ];
