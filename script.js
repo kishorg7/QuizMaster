@@ -1,8 +1,14 @@
 let currentQuestion = 0;
 let score = 0;
 
-localStorage.removeItem("quizScore");
-localStorage.removeItem("quizTotal");
+function resetQuizState() {
+    currentQuestion = 0;
+    score = 0;
+    localStorage.removeItem("quizScore");
+    localStorage.removeItem("quizTotal");
+}
+
+resetQuizState();
 
 const questionText = document.getElementById("question");
 const optionsContainer = document.getElementById("options");
