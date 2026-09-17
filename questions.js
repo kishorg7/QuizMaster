@@ -189,4 +189,14 @@ const questions = [
         ],
         answer: "<p>"
     },
+        {
+        question: "Which CSS property is used to change the background color of an element?",
+        options: [
+            "color",
+            "background-color",
+            "background",
+            "fill"
+        ],
+        answer: "background-color"
+    },
 ];
