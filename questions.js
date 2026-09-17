@@ -239,4 +239,14 @@ const questions = [
         ],
         answer: "<img>"
     },
+        {
+        question: "Which CSS property is used to align text horizontally?",
+        options: [
+            "text-align",
+            "align-text",
+            "text-position",
+            "horizontal-align"
+        ],
+        answer: "text-align"
+    },
 ];
