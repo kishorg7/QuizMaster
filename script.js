@@ -14,6 +14,13 @@ function updateScoreDisplay() {
     }
 }
 
+function updateProgressDisplay() {
+    if (progressText) {
+        progressText.textContent =
+            `Question ${currentQuestion + 1} of ${questions.length}`;
+    }
+}
+
 function disableAnswerButtons() {
     Array.from(optionsContainer.children).forEach((btn) => {
         btn.disabled = true;
@@ -86,10 +93,7 @@ function loadQuestion() {
         optionsContainer.appendChild(button);
     });
 
-    if (progressText) {
-        progressText.textContent =
-            `Question ${currentQuestion + 1} of ${questions.length}`;
-    }
+    updateProgressDisplay();
 
     if (scoreText) {
     scoreText.textContent = `Score: ${score}`;
