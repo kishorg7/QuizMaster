@@ -249,4 +249,14 @@ const questions = [
         ],
         answer: "text-align"
     },
+        {
+        question: "Which JavaScript method converts text to uppercase?",
+        options: [
+            "toUpperCase()",
+            "upperCase()",
+            "toUpper()",
+            "changeCase()"
+        ],
+        answer: "toUpperCase()"
+    },
 ];
