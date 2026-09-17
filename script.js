@@ -12,6 +12,7 @@ function loadQuestion() {
     const current = questions[currentQuestion];
     let answered = false;
     nextButton.disabled = true;
+    nextButton.textContent = "Next";
     if (feedbackText) {
     feedbackText.textContent = "";
 }
