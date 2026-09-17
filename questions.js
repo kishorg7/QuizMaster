@@ -279,4 +279,24 @@ const questions = [
         ],
         answer: "true"
     },
+        {
+        question: "Which CSS property controls how an element is displayed?",
+        options: [
+            "display",
+            "position",
+            "visibility",
+            "layout"
+        ],
+        answer: "display"
+    },
+        {
+        question: "Which brackets are used to create an object in JavaScript?",
+        options: [
+            "{}",
+            "[]",
+            "()",
+            "<>"
+        ],
+        answer: "{}"
+    },
 ];
