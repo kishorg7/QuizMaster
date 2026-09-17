@@ -13,6 +13,11 @@ function saveQuizResult() {
     localStorage.setItem("quizTotal", questions.length);
 }
 
+function finishQuiz() {
+    saveQuizResult();
+    window.location.href = "result.html";
+}
+
 function updateScoreDisplay() {
     if (scoreText) {
         scoreText.textContent = `Score: ${score}`;
@@ -118,8 +123,7 @@ if (nextButton) {
         currentQuestion++;
         loadQuestion();
     } else {
-        saveQuizResult();
-        window.location.href = "result.html";
+        finishQuiz();
     }
     });
 }
