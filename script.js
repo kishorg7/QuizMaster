@@ -8,6 +8,11 @@ const progressText = document.getElementById("question-number");
 const scoreText = document.getElementById("score");
 const feedbackText = document.getElementById("answer-feedback");
 
+function saveQuizResult() {
+    localStorage.setItem("quizScore", score);
+    localStorage.setItem("quizTotal", questions.length);
+}
+
 function updateScoreDisplay() {
     if (scoreText) {
         scoreText.textContent = `Score: ${score}`;
@@ -113,8 +118,7 @@ if (nextButton) {
         currentQuestion++;
         loadQuestion();
     } else {
-        localStorage.setItem("quizScore", score);
-        localStorage.setItem("quizTotal", questions.length);
+        saveQuizResult();
         window.location.href = "result.html";
     }
     });
