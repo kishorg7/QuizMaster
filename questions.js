@@ -1,3 +1,5 @@
+// Question bank for the QuizMaster application.
+// Each question contains options and the correct answer.
 const questions = [
     {
         question: "What does HTML stand for?",
@@ -48,5 +50,255 @@ const questions = [
             "@"
         ],
         answer: "#"
-    }
+    },
+    {
+        question: "Which of these is a web browser?",
+        options: [
+            "Google Chrome",
+            "Microsoft Word",
+            "Adobe Photoshop",
+            "MySQL"
+        ],
+        answer: "Google Chrome"
+    },
+    {
+        question: "Which CSS property is used to change the text color?",
+        options: [
+            "background-color",
+            "font-size",
+            "color",
+            "text-style"
+        ],
+        answer: "color"
+    },
+    {
+        question: "Which keyword is used to declare a constant in JavaScript?",
+        options: [
+            "var",
+            "let",
+            "const",
+            "static"
+        ],
+        answer: "const"
+    },
+       {
+        question: "Which method adds an item to the end of a JavaScript array?",
+        options: [
+            "push()",
+            "pop()",
+            "shift()",
+            "slice()"
+        ],
+        answer: "push()"
+    }, 
+    {
+        question: "What does DOM stand for?",
+        options: [
+            "Document Object Model",
+            "Data Object Management",
+            "Digital Output Method",
+            "Document Order Method"
+        ],
+        answer: "Document Object Model"
+    },
+    {
+        question: "Which CSS property controls the space inside an element?",
+        options: [
+            "margin",
+            "padding",
+            "border",
+            "outline"
+        ],
+        answer: "padding"
+    },
+        {
+        question: "Which keyword is used to define a function in JavaScript?",
+        options: [
+            "function",
+            "method",
+            "define",
+            "func"
+        ],
+        answer: "function"
+    },
+        {
+        question: "Which HTML element is used for the main content of a page?",
+        options: [
+            "<main>",
+            "<content>",
+            "<body-content>",
+            "<section-main>"
+        ],
+        answer: "<main>"
+    },
+        {
+        question: "Which HTML attribute provides alternative text for an image?",
+        options: [
+            "src",
+            "alt",
+            "title",
+            "href"
+        ],
+        answer: "alt"
+    },
+        {
+        question: "Which CSS property is used to change the size of text?",
+        options: [
+            "font-size",
+            "text-size",
+            "font-style",
+            "text-weight"
+        ],
+        answer: "font-size"
+    },
+        {
+        question: "Which keyword can be used to declare a variable in JavaScript?",
+        options: [
+            "let",
+            "style",
+            "class",
+            "select"
+        ],
+        answer: "let"
+    },
+        {
+        question: "Which HTML element is used for the largest heading?",
+        options: [
+            "<h1>",
+            "<h6>",
+            "<head>",
+            "<heading>"
+        ],
+        answer: "<h1>"
+    },
+        {
+        question: "Which HTML element is used to create an unordered list?",
+        options: [
+            "<ul>",
+            "<ol>",
+            "<li>",
+            "<list>"
+        ],
+        answer: "<ul>"
+    },
+        {
+        question: "Which HTML element is used to create a paragraph?",
+        options: [
+            "<p>",
+            "<para>",
+            "<paragraph>",
+            "<text>"
+        ],
+        answer: "<p>"
+    },
+        {
+        question: "Which CSS property is used to change the background color of an element?",
+        options: [
+            "color",
+            "background-color",
+            "background",
+            "fill"
+        ],
+        answer: "background-color"
+    },
+        {
+        question: "Which statement is used to make a decision in JavaScript?",
+        options: [
+            "if",
+            "for",
+            "while",
+            "switch-case-loop"
+        ],
+        answer: "if"
+    },
+        {
+        question: "Which CSS property is used to add a border around an element?",
+        options: [
+            "outline",
+            "border",
+            "box",
+            "edge"
+        ],
+        answer: "border"
+    },
+        {
+        question: "Which JavaScript loop is commonly used to repeat code a specific number of times?",
+        options: [
+            "for",
+            "repeat",
+            "loop",
+            "each"
+        ],
+        answer: "for"
+    },
+        {
+        question: "Which HTML element is used to display an image?",
+        options: [
+            "<img>",
+            "<image>",
+            "<picture>",
+            "<src>"
+        ],
+        answer: "<img>"
+    },
+        {
+        question: "Which CSS property is used to align text horizontally?",
+        options: [
+            "text-align",
+            "align-text",
+            "text-position",
+            "horizontal-align"
+        ],
+        answer: "text-align"
+    },
+        {
+        question: "Which JavaScript method converts text to uppercase?",
+        options: [
+            "toUpperCase()",
+            "upperCase()",
+            "toUpper()",
+            "changeCase()"
+        ],
+        answer: "toUpperCase()"
+    },
+        {
+        question: "Which CSS property controls the space outside an element?",
+        options: [
+            "padding",
+            "margin",
+            "spacing",
+            "border-space"
+        ],
+        answer: "margin"
+    },
+        {
+        question: "Which value represents a true condition in JavaScript?",
+        options: [
+            "true",
+            "yes",
+            "1true",
+            "on"
+        ],
+        answer: "true"
+    },
+        {
+        question: "Which CSS property controls how an element is displayed?",
+        options: [
+            "display",
+            "position",
+            "visibility",
+            "layout"
+        ],
+        answer: "display"
+    },
+        {
+        question: "Which brackets are used to create an object in JavaScript?",
+        options: [
+            "{}",
+            "[]",
+            "()",
+            "<>"
+        ],
+        answer: "{}"
+    },
 ];
