@@ -129,4 +129,14 @@ const questions = [
         ],
         answer: "<main>"
     },
+        {
+        question: "Which HTML attribute provides alternative text for an image?",
+        options: [
+            "src",
+            "alt",
+            "title",
+            "href"
+        ],
+        answer: "alt"
+    },
 ];
