@@ -159,4 +159,14 @@ const questions = [
         ],
         answer: "let"
     },
+        {
+        question: "Which HTML element is used for the largest heading?",
+        options: [
+            "<h1>",
+            "<h6>",
+            "<head>",
+            "<heading>"
+        ],
+        answer: "<h1>"
+    },
 ];
