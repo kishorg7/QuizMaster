@@ -1,3 +1,5 @@
+// Question bank for the QuizMaster application.
+// Each question contains options and the correct answer.
 const questions = [
     {
         question: "What does HTML stand for?",
