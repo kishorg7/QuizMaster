@@ -209,4 +209,14 @@ const questions = [
         ],
         answer: "if"
     },
+        {
+        question: "Which CSS property is used to add a border around an element?",
+        options: [
+            "outline",
+            "border",
+            "box",
+            "edge"
+        ],
+        answer: "border"
+    },
 ];
