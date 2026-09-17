@@ -269,4 +269,14 @@ const questions = [
         ],
         answer: "margin"
     },
+        {
+        question: "Which value represents a true condition in JavaScript?",
+        options: [
+            "true",
+            "yes",
+            "1true",
+            "on"
+        ],
+        answer: "true"
+    },
 ];
