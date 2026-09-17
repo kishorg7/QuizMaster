@@ -139,4 +139,14 @@ const questions = [
         ],
         answer: "alt"
     },
+        {
+        question: "Which CSS property is used to change the size of text?",
+        options: [
+            "font-size",
+            "text-size",
+            "font-style",
+            "text-weight"
+        ],
+        answer: "font-size"
+    },
 ];
