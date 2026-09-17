@@ -219,4 +219,14 @@ const questions = [
         ],
         answer: "border"
     },
+        {
+        question: "Which JavaScript loop is commonly used to repeat code a specific number of times?",
+        options: [
+            "for",
+            "repeat",
+            "loop",
+            "each"
+        ],
+        answer: "for"
+    },
 ];
