@@ -12,6 +12,22 @@ function resetQuizState() {
 const questionText = document.getElementById("question");
 const optionsContainer = document.getElementById("options");
 const nextButton = document.getElementById("next-btn");
+
+const scorePercentageText = document.getElementById("score-percentage");
+
+if (scorePercentageText) {
+    const savedScore = localStorage.getItem("quizScore");
+    const savedTotal = localStorage.getItem("quizTotal");
+
+    if (savedScore !== null && savedTotal !== null) {
+        const percentage =
+            (Number(savedScore) / Number(savedTotal)) * 100;
+
+        scorePercentageText.textContent =
+            `Percentage: ${percentage}%`;
+    }
+}
+
 const progressText = document.getElementById("question-number");
 const scoreText = document.getElementById("score");
 const feedbackText = document.getElementById("answer-feedback");
