@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuizMaster - Result</title>
+    <meta name="description" content="View your final QuizMaster score and performance result.">
     <script src="questions.js" defer></script>
 <script src="script.js" defer></script>
 </head>
@@ -18,33 +19,38 @@
     <main>
 
        <section>
-    <h2>Quiz Completed!</h2>
+    <h2 id="completion-heading">Quiz Completed!</h2>
+    <p id="completion-message" class="completion-message">You have completed all the questions.</p>
 
-    <p>You have completed all the questions.</p>
-
-    <p>Check your final score below to see how you performed.</p>
+    <p id="result-instruction">Check your final score below to see how you performed.</p>
 </section>
 
-        <section id="result-container" aria-labelledby="result-heading">
+        <section id="result-container" aria-labelledby="result-heading" role="region">
     <h2 id="result-heading">Your Result</h2>
 
-    <p>Here is your final quiz score:</p>
+    <p>Review your score and performance below.</p>
 
-    <p id="final-score" aria-live="polite">Your score will appear here.</p>
+    <p id="result-summary" class="result-summary">Here is your final quiz score:</p>
 
-    <p id="performance-message" aria-live="polite">
-        Your performance message will appear here.
-    </p>
+    <p id="score-percentage" class="score-percentage" aria-live="polite" role="status">
+    Your percentage will appear here.
+</p>
+
+    <p id="performance-message" class="performance-message" aria-live="polite" role="status">
+    Your performance result will appear here.
+</p>
 </section>
 
-        <section id="result-actions">
-    <h2>What Would You Like to Do?</h2>
+        <section id="result-actions" aria-labelledby="result-actions-heading">
+    <h2 id="result-actions-heading">What Would You Like to Do?</h2>
 
-    <p>Try the quiz again or return to the home page.</p>
+    <p id="result-actions-description">
+    Try the quiz again or return to the home page.
+</p>
 
-    <a href="quiz.html" aria-label="Restart the quiz">Restart Quiz</a>
+    <a href="quiz.html" aria-label="Restart the quiz and start again">Restart Quiz</a>
 
-    <<a href="index.html" aria-label="Return to the home page">Return to Home</a>
+    <a href="index.html" aria-label="Return to the QuizMaster home page">Return to Home</a>
 </section>
 
     </main>

@@ -2,6 +2,14 @@ let currentQuestion = 0;
 let score = 0;
 let answered = false;
 
+function calculatePercentage(score, total) {
+    if (total === 0) {
+        return 0;
+    }
+
+    return (score / total) * 100;
+}
+
 function resetQuizState() {
     currentQuestion = 0;
     score = 0;
@@ -12,6 +20,24 @@ function resetQuizState() {
 const questionText = document.getElementById("question");
 const optionsContainer = document.getElementById("options");
 const nextButton = document.getElementById("next-btn");
+
+const scorePercentageText = document.getElementById("score-percentage");
+
+if (scorePercentageText) {
+    const savedScore = localStorage.getItem("quizScore");
+    const savedTotal = localStorage.getItem("quizTotal");
+
+    if (savedScore !== null && savedTotal !== null) {
+        const percentage = calculatePercentage(
+    Number(savedScore),
+    Number(savedTotal)
+);
+
+        scorePercentageText.textContent =
+    `Percentage: ${percentage.toFixed(1)}%`;
+    }
+}
+
 const progressText = document.getElementById("question-number");
 const scoreText = document.getElementById("score");
 const feedbackText = document.getElementById("answer-feedback");
@@ -160,7 +186,10 @@ if (performanceText) {
     const savedTotal = localStorage.getItem("quizTotal");
 
     if (savedScore !== null && savedTotal !== null) {
-        const percentage = (Number(savedScore) / Number(savedTotal)) * 100;
+        const percentage = calculatePercentage(
+    Number(savedScore),
+    Number(savedTotal)
+);
 
         if (percentage >= 80) {
             performanceText.textContent = "Excellent performance!";
