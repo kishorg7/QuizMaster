@@ -186,7 +186,10 @@ if (performanceText) {
     const savedTotal = localStorage.getItem("quizTotal");
 
     if (savedScore !== null && savedTotal !== null) {
-        const percentage = (Number(savedScore) / Number(savedTotal)) * 100;
+        const percentage = calculatePercentage(
+    Number(savedScore),
+    Number(savedTotal)
+);
 
         if (percentage >= 80) {
             performanceText.textContent = "Excellent performance!";
