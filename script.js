@@ -2,6 +2,14 @@ let currentQuestion = 0;
 let score = 0;
 let answered = false;
 
+function calculatePercentage(score, total) {
+    if (total === 0) {
+        return 0;
+    }
+
+    return (score / total) * 100;
+}
+
 function resetQuizState() {
     currentQuestion = 0;
     score = 0;
