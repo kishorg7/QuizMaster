@@ -24,7 +24,7 @@ if (scorePercentageText) {
             (Number(savedScore) / Number(savedTotal)) * 100;
 
         scorePercentageText.textContent =
-            `Percentage: ${percentage}%`;
+    `Percentage: ${percentage.toFixed(1)}%`;
     }
 }
 
