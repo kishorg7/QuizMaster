@@ -28,8 +28,10 @@ if (scorePercentageText) {
     const savedTotal = localStorage.getItem("quizTotal");
 
     if (savedScore !== null && savedTotal !== null) {
-        const percentage =
-            (Number(savedScore) / Number(savedTotal)) * 100;
+        const percentage = calculatePercentage(
+    Number(savedScore),
+    Number(savedTotal)
+);
 
         scorePercentageText.textContent =
     `Percentage: ${percentage.toFixed(1)}%`;
