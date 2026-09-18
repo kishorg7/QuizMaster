@@ -12,7 +12,8 @@ header {
     background: #222;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 25px 20px;
+    border-radius: 0 0 8px 8px;
 }
 
 main {
