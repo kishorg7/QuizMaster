@@ -95,3 +95,11 @@ a:focus {
     border-radius: 6px;
     font-weight: 600;
 }
+
+.correct {
+    border: 2px solid #2e7d32;
+}
+
+.incorrect {
+    border: 2px solid #c62828;
+}
