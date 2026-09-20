@@ -103,3 +103,9 @@ a:focus {
 .incorrect {
     border: 2px solid #c62828;
 }
+
+#answer-feedback {
+    margin-top: 15px;
+    font-weight: 600;
+    text-align: center;
+}
