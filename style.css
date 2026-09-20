@@ -82,8 +82,9 @@ a:focus {
     border: 2px solid #555;
 }
 
-#progress {
+#question-number {
     font-weight: bold;
+    margin: 0;
 }
 
 #quiz-progress {
