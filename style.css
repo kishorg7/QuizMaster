@@ -125,3 +125,9 @@ a:focus {
     margin-bottom: 10px;
     font-weight: 600;
 }
+
+.final-score {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 15px 0;
+}
