@@ -114,3 +114,9 @@ a:focus {
     margin: 0;
     font-weight: 600;
 }
+
+#next-btn {
+    min-width: 120px;
+    margin-top: 15px;
+    font-weight: 600;
+}
