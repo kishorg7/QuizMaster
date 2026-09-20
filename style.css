@@ -54,6 +54,11 @@ button:hover {
     transform: translateY(-1px);
 }
 
+a:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+}
+
 button:focus,
 a:focus {
     outline: 3px solid #555;
