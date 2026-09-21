@@ -212,29 +212,17 @@ Contributions:
 
 The project uses a feature-branch workflow for collaborative development.
 
-### Workflow
+### Branch Strategy
 
-Team Member
-     ↓
-Feature Branch
-     ↓
-Development
-     ↓
-Meaningful Commits
-     ↓
-Push to GitHub
-     ↓
-Pull Request
-     ↓
-Review / Integration
-     ↓
-Integration Branch
-     ↓
-Final Integrated Project
+The project uses the following branch structure:
 
-Each team member worked on an assigned feature branch.
+main
+- Final stable version of the project.
 
-Feature branches used:
+Feature branches
+- Used by individual team members to develop specific features.
+
+Feature branches used during development:
 
 feature/frontend-pages
 feature/quiz-functionality
@@ -242,7 +230,7 @@ feature/question-bank
 feature/result-handling
 feature/ui-styling
 
-Pull Requests were used to integrate completed feature work into the shared integration branch.
+Completed feature work was pushed to GitHub and integrated through Pull Requests.
 
 ## 10. Individual SCM Contribution
 
@@ -258,9 +246,24 @@ The project includes:
 - Final integration testing
 - Individual contributions from all five members
 
-Each member completed 25 or more meaningful commits as part of the project contribution requirement.
+Each team member completed 25 or more meaningful commits as part of the project contribution requirement.
 
-## 11. Testing and Validation
+## 11. GitHub Pull Request Workflow
+
+The development process followed these steps:
+
+1. Create or switch to the assigned feature branch.
+2. Make changes to the assigned project feature.
+3. Review the changes using Git.
+4. Create meaningful commits.
+5. Push the feature branch to GitHub.
+6. Create a Pull Request.
+7. Review the changes.
+8. Merge the completed feature into the integration branch.
+9. Integrate the completed project into the main branch.
+10. Test the final application.
+
+## 12. Testing and Validation
 
 The following areas were tested during development.
 
@@ -289,7 +292,40 @@ The following areas were tested during development.
 - Result information is displayed clearly.
 - Responsive styling is included for smaller screens.
 
-## 12. Future Enhancements
+## 13. SCM Practices Demonstrated
+
+The project demonstrates several Software Configuration Management practices:
+
+- Git repository management
+- Git branching
+- Feature-based development
+- Meaningful commits
+- GitHub collaboration
+- Pull Requests
+- Code integration
+- Individual contribution tracking
+- Version history
+- Final integration and testing
+
+## 14. Merge Conflict and Resolution
+
+During collaborative development, merge conflicts can occur when multiple branches modify the same part of a file.
+
+For this project, any merge conflict encountered during integration should be resolved by:
+
+1. Identifying the conflicting file.
+2. Opening the file containing the conflict markers.
+3. Reviewing the changes from both branches.
+4. Keeping or combining the correct changes.
+5. Removing the conflict markers.
+6. Testing the application.
+7. Staging the resolved file.
+8. Creating a commit for the conflict resolution.
+9. Pushing the resolved changes to GitHub.
+
+The conflict-resolution process should be documented with the actual conflict and resolution used during the project.
+
+## 15. Future Enhancements
 
 Possible future improvements include:
 
@@ -305,7 +341,7 @@ Possible future improvements include:
 
 These features are not part of the current implementation and can be considered for future versions.
 
-## 13. Conclusion
+## 16. Conclusion
 
 QuizMaster demonstrates the development of a simple interactive quiz application while applying Software Configuration Management practices using Git and GitHub.
 
@@ -321,7 +357,7 @@ The project demonstrates:
 - Individual team contributions.
 - Final application testing and validation.
 
-## 14. Team
+## 17. Team
 
 Kishor
 Manya M
