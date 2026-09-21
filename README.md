@@ -360,9 +360,9 @@ The project demonstrates:
 ## 17. Team
 
 Kishor
-Manya M
-Ankitha
-Annapoorna
-Pavan
+| Manya M
+| Ankitha
+| Annapoorna
+| Pavan
 
 QuizMaster – SCM Final Group Project, 2026
